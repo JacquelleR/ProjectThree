@@ -61,16 +61,55 @@ h1.home{
 
 /******* Boxes for options ****/
 
-html body div.news{
+section.registration-id{
+	margin-top: 2em;
+	margin-left:3em;
+	margin-right:5.5em;
+  	position: relative;
+  	width: auto;
+  	height:auto;
+  	font-size: 1em;
+  	line-height: 2em;
+  	color: #FF0000;
+  	border-radius: 10px;
+  	padding: 1em;
+  	border: 5px solid #C11B17 ;
+	background-color: #FAFAFA;
+	box-sizing: border-box;
+	float:right;
+	
 
-	border: 2px solid black;
-	padding: 10px;
+}
+
+section.registration-id span{
+       font-size: 1.5em;
+}
+
+section.registration-id ul{
+	list-style: none;
+}
+section.registration-tools{
 	margin: 2em;
+  	position: relative;
+  	width: auto;
+  	height:auto;
+  	font-size: 1em;
+  	line-height: 2em;
+  	color: #FF0000;
+  	border-radius: 10px;
+  	padding: 1em;
+  	border: 5px solid #C11B17 ;
+	background-color: #FAFAFA;
+	box-sizing: border-box;
+	float:left;
+	
 }
 
-div.news ul li{
+section.registration-tools span{
+	font-size:1.5em;
+
+}
+
+section.registration-tools ul{
 	list-style:none;
-	display:inline;
 }
-
-
