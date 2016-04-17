@@ -113,3 +113,71 @@ section.registration-tools span{
 section.registration-tools ul{
 	list-style:none;
 }
+
+
+/**** Registration page *****/
+section.registration{
+	margin:2em;
+	display:block;
+}
+section.registration select{
+	margin-left:7.3em;
+	width:16em;
+	margin-bottom:2em;
+}
+section.registration .form2{
+	margin-top:1em;
+	margin-left:23.5em;
+}
+
+/****** Schedule ******/
+
+
+section.schedule{
+	margin:2em;
+}
+
+section.schedule h3{
+	margin:1em;
+}
+
+section.schedule table tbody{
+	margin: 2em;
+  	position: relative;
+  	width: auto;
+  	height:auto;
+  	font-size: 1em;
+  	line-height: 2em;
+  	color: #FF0000;
+  	border-radius: 10px;
+  	padding: 1em;
+  	border: 5px solid #C11B17 ;
+	background-color: #FAFAFA;
+	box-sizing: border-box;
+}
+
+
+section.schedule table{
+	margin:1em;
+}
+
+section.schedule table tbody tr{
+	display: block;
+	margin: 1em;
+}
+
+section.schedule table tbody tr th{
+	padding:2em;
+}
+
+section.schedule table tbody tr.classdetails{
+	display: block;
+	margin-top: -3.8em;
+}
+section.schedule table tbody tr.classdetails td{
+	padding:1.7em;
+	margin-top:1em;
+}
+section.schedule table tbody tr.classdetails td select{
+	display:inline;
+}
