@@ -181,3 +181,8 @@ section.schedule table tbody tr.classdetails td{
 section.schedule table tbody tr.classdetails td select{
 	display:inline;
 }
+
+section.schedule .form3 {
+	margin-top:1em;
+	margin-left:23.5em;
+}
