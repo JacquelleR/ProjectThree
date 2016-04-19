@@ -16,35 +16,65 @@
 		</picture>
 		</header>
 	</section>
-	<nav>
-		<ul>		
-			<li><a href="welcome.html">Home Page</a></li>
-			<li><a href="registration.html">Academics</a></li>
-			<li><a href="welcome.html">Finance</a></li>
-			<li><a href="welcome.html">Library and Research</a></li>
+	<ul class="navigation">		
+		<li class="nav-item">
+			<a href="welcome.html">Home Page</a>
+		</li>
+		<li class="nav-item">
+			<a href="academics.html">Academics</a>
+		</li>
+		<li class="nav-item">
+			<a href="welcome.html">Finance</a>
+		</li>
+		<li class="nav-item">
+			<a href="welcome.html">Library and Research</a>
+		</li>
 
-		<!-- Gmail / Blackboard Below -->
-			
-			<li><a href="https://my.iit.edu/jsp/misc/iit/gSp.jsp?SAMLRequest=fVLfT9swEH6fxP9g%2BT1JUzGGrCaogNAqsS2iYQ%2B8HfYlterYns9px3%2BPm4JgEuP18933y7e4%2BDsYtsNA2tmKl%2FmMM7TSKW37it%2B3N9k5v6hPviwIBuPFcowbe4d%2FRqTI0qYlMT1UfAxWOCBNwsKAJKIU6%2BWPWzHPZ8IHF510hrPVdcU71Wu13XqjpQflOgm%2B3xjvug6Ugi3Co7Negefs96ut%2BcHWimjElaUINiZoVp5ls9OsPGvnc1Gei6%2FfHjhrXpQutT0m%2BMzW43GIxPe2bbLm17qdCHZaYfiZpiveO9cbzKUbDvINEOldgjswhJwtiTDEZPDKWRoHDGsMOy3x%2Fu624psYPYmi2O%2F3%2BRtNAYXWMUc1FiCJ11OtYkoW3vX5uW941eX1R8yL4h1p%2FfJxhzyr68al0p%2FY0hi3vwoIMYWJYUxZblwYIP5ft8zLCdEq66ZRMVryKHWnUXFW1EfVfy8k3c0z&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fmail.google.com%252Fmail%252F%26osid%3D1%26service%3Dmail%26ss%3D1%26ltmpl%3Ddefault">Gmail</a></li>
-			<li><a href="https://blackboard.iit.edu/">Blackboard</a></li>
-			<li><a href="index.html">Logout</a></li>
-		</ul>
-	</nav>
-
+	<!-- Gmail / Blackboard Below -->	
+		<!-- Link to GMail-->
+		<li class="nav-item">
+			<a href="https://my.iit.edu/jsp/misc/iit/gSp.jsp?SAMLRequest=fVLfT9swEH6fxP9g%2BT1JUzGGrCaogNAqsS2iYQ%2B8HfYlterYns9px3%2BPm4JgEuP18933y7e4%2BDsYtsNA2tmKl%2FmMM7TSKW37it%2B3N9k5v6hPviwIBuPFcowbe4d%2FRqTI0qYlMT1UfAxWOCBNwsKAJKIU6%2BWPWzHPZ8IHF510hrPVdcU71Wu13XqjpQflOgm%2B3xjvug6Ugi3Co7Negefs96ut%2BcHWimjElaUINiZoVp5ls9OsPGvnc1Gei6%2FfHjhrXpQutT0m%2BMzW43GIxPe2bbLm17qdCHZaYfiZpiveO9cbzKUbDvINEOldgjswhJwtiTDEZPDKWRoHDGsMOy3x%2Fu624psYPYmi2O%2F3%2BRtNAYXWMUc1FiCJ11OtYkoW3vX5uW941eX1R8yL4h1p%2FfJxhzyr68al0p%2FY0hi3vwoIMYWJYUxZblwYIP5ft8zLCdEq66ZRMVryKHWnUXFW1EfVfy8k3c0z&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fmail.google.com%252Fmail%252F%26osid%3D1%26service%3Dmail%26ss%3D1%26ltmpl%3Ddefault" target="_blank" >
+				<img id="GmailPic" src="img/Gmail.png" width="25" height="25"/>
+			</a>
+		</li>
+		<!-- Link to Blackboard-->
+		<li class="nav-item">
+			<a href="https://blackboard.iit.edu/" target="_blank">
+				<img src="img/BlackBoardLearn.jpg" width="25" height="25" />
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="index.html">
+				<img src="img/lock.png" width="25" height="25" />
+			</a>
+		</li>
+	</ul>
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 	<!--carousel for news-->
 	<div id="news">
-		<span>IIT News</span>
-		<ul>
-			<li> President</li>
-			<li> President1</li>
-			<li> President2</li>
-		</ul>
+		<section class="content1">
+			<h1 class="title">
+				IIT Tech News
+			</h1>
+			<h2 class="headline">
+				Food Science Club aims to investigate, educate about our food.
+			</h2>
+			<p class="preview">
+				Luciano Pavarotti once said, “One of very nicest things about life is the way we must regularly stop whatever it is we are doing and devote our attention to eating.” But how many times do we stop to wonder what it is that we are eating exactly?
+			</p>
+			<h2 class="headline">
+				Illinois Tech Robotics wins third Midwestern Robotics Design Competition title.
+			</h2>
+			<p class="preview">
+				Illinois Tech Robotics, IIT’s extracurricular robotics team, won their third first-place title in the club’s 10-year history competing at the Midwestern Robotics Design Competition.
+			</p>
+		</section>
 	</div>
 
 	<!-- academic calendar-->
-	<div>
-		<span>Academic Calender</span>
+	<div id="calender">
+		<iframe id="cal" src="https://calendar.google.com/calendar/embed?src=calendar%40iit.edu&ctz=America/Chicago" >
+		</iframe>
 	</div>
-
 </body>
 </html>

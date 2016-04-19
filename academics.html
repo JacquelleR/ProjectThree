@@ -9,11 +9,11 @@
 <body>
 	<section class="header">
 		<header>
-			<h1 class="home">Registration</h1>
-		<picture>
-			<source srcset="img/myiit-logo.png">
-			<img src="img/myiit-logo.png" alt="myIIT logo">
-		</picture>
+			<h1 class="home">Academics</h1>
+			<picture>
+				<source srcset="img/myiit-logo.png">
+				<img src="img/myiit-logo.png" alt="myIIT logo">
+			</picture>
 		</header>
 	</section>
 	<ul class="navigation">		
@@ -29,7 +29,6 @@
 		<li class="nav-item">
 			<a href="welcome.html">Library and Research</a>
 		</li>
-
 	<!-- Gmail / Blackboard Below -->	
 		<!-- Link to GMail-->
 		<li class="nav-item">
@@ -37,64 +36,49 @@
 				<img id="GmailPic" src="img/Gmail.png" width="25" height="25"/>
 			</a>
 		</li>
+
 		<!-- Link to Blackboard-->
-		<li>
+		<li class="nav-item">
 			<a href="https://blackboard.iit.edu/" target="_blank">
 				<img src="img/BlackBoardLearn.jpg" width="25" height="25" /></a>
 		</li>
-		<li>
+
+		<li class="nav-item">
 			<a href="index.html">Logout</a>
 		</li>
 	</ul>
+
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 	
-	<section class="schedule">
-	<h3>Please note that you are NOT offically registered for a class if the status in watilisted.</h3>
-	<table>
-	<tr>
-	<th>Status</th>
-	<th>Action</th>
-	<th>CRN</th>
-	<th>Subject</th>
-	<th>Course</th>
-	<th>Credit</th>
-	<th>Title</th>
-	</tr>	
-	
-	<tr class="classdetails">
-	<td>Registered</td>
-	<td>
-	<select>
-	<option value="none">None</option>
-	<option value="drop">Drop</option>
-	</select>
-	</td>
-	<td>12456</td>
-	<td>ITMD362</td>
-	<td>HCI</td>
-	<td>3.00</td>
-	<td>Human Computer Interaction</td>
-	</tr>	
-	<tr class="classdetails">
-	<td>Waitlisted</td>
-	<td>
-	<select>
-	<option value="none">None</option>
-	<option value="drop">Drop</option>
-	</select>
-	</td>
-	<td>12456</td>
-	<td>ITMD362</td>
-	<td>HCI</td>
-	<td>3.00</td>
-	<td>Human Computer Interaction</td>
-	</tr>	
-	
-	<form class="form3" action="schedule.html">
-	<button type="submit">Submit Changes</button>	
-	</form>	
-	
+	<section class="registration-id">
+		<span>Academic Profile</span>
+		<ul>
+			<li>Student Grade</li>
+			<li>Academic Advisor</li>
+			<li>Course Evaluation</li>
+			<li>Degree Work</li>
+		</ul>
 	</section>
-		<script src="somethinghere.js"> 
-		</script>
+	<section class="registration-tools">
+		<span>Registration Tools</span>
+		<ul>
+			<li>Register for Class</li>
+			<li>Look Up classes</li>
+		</ul>
+			<!-- Contains a drop-down menu, shows the Registration PIN for the varying semesters -->
+	</section>
+	<section class="degree-works">
+		<ul>
+			<li><a href="https://degreeworks.iit.edu/dwdev/IRISLink.cgi?CAS=ENABLED&SERVICE=LOGON&SCRIPT=SD2WORKS&">Undergraduate Degree Works</a></li>
+			<li><a href="https://degreeworks-g.iit.edu/IRISLink.cgi?CAS=ENABLED&SERVICE=LOGON&SCRIPT=SD2WORKS&">Graduate Degree Works</a></li>
+		<ul>
+	</section>
+	<section class="registration-tools">
+		<ul>
+			<li><a href=" ">Search Classes</a></li>
+			<li><a href=" ">Add/Drop Classes</a></li> 
+			<!-- Add/Drop Classes should allow you to check status, time, & location.  -->
+		</ul>
+	</section>
 </body>
 </html>
