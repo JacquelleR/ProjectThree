@@ -36,6 +36,22 @@ header{
 	margin-top:0.5em;
 }
 /*	Navigation Bar -- Welcome, Class Registration, Academics, Finance, GMail, Blackboard*/
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: auto;
+  z-index: 0;
+  
+  list-style: none;
+  background: #111;
+   -moz-box-shadow:		0px 0px 5px 0px #000000;
+   -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow:       0px 0px 5px 0px #000000;
+  
+}
+
+/*
 nav{
 	background-color:#333;
 	margin: 0 auto;
@@ -53,12 +69,95 @@ nav > ul > li > a{
 	text-decoration:none;
 	margin:right;
 }
+*/
+
 a:hover{	/*When navbar link is hovered, it will highlight a color*/
 	background-color:#cc0000;
 	font-weight: bold;
 }
+.nav-item {
+  width:12.5em;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+   -moz-box-shadow:		0px 3px 5px 0px #000000;
+   -webkit-box-shadow: 0px 3px 5px 0px #000000;
+    box-shadow:       		  0px 3px 5px 0px #000000;
+}
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label[for="nav-trigger"] {
+    /* ... previous styles here... */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+}
 
 /******* Boxes for options ****/
+
+/* From Home Page */
+
+section.content1{	
+	border: 0.1em solid #a20000;
+	border-radius: 2em;
+	background-color:#222222;
+	padding: 1em;
+	margin: 0 auto;
+	margin-left:15em;
+	margin-top: 1em;
+	width:35%;
+	height:40em;
+	position:relative;
+	
+}
+section.content2{
+	border: 0.1em solid #a20000;
+	border-radius: 2em;
+	background-color:#222222;
+	padding: 1em;
+	margin: 0 auto;
+	margin-left:65em;
+	margin-top: -42em;
+	width:35%;
+	height:40em;
+	position:relative;
+	
+}
+section.content1 > h1.title, section.content2 > h1.title{
+	font-size:2em;
+	color:white;
+	padding-bottom:0.5em;
+}
+section.content1 > h2.headline{
+	font-size:1.2em;
+	color:#cccccc;
+	padding-bottom:0.45em;
+}
+section.content1 > p.preview{
+	font-size:1.1em;
+	line-height:1.1em;
+	color:#aaaaaa;
+	padding-bottom:2em;
+}
 
 section.registration-id{
 	margin-top: 2em;
@@ -130,8 +229,6 @@ section.registration .form2{
 }
 
 /****** Schedule ******/
-
-
 section.schedule{
 	margin:2em;
 }
@@ -185,12 +282,15 @@ section.schedule.form3 {
 	margin-top:1em;
 	margin-left:23.5em;
 }
+th{
+	color:white;
+}
 
 /******** news css *******/
 #news{
-	height: 25%;
+	height: 40%;
 	border: 2px solid black;
-	padding: 10px;
+	padding: 2%;
 	margin: 2em;
 }
 
@@ -201,12 +301,13 @@ section.schedule.form3 {
 
 /******** calendar css *******/
 #calendar{
-	height: 50%
+	height: 100%;
 	width: 80%;
 }
 #cal {
+	position: relative;
+	left:5%;
 	border: 0;
-	width: 100%;
-	height: 100%;
-	frameborder: 0;
+	width: 90%;
+	height: 50%;
 }
