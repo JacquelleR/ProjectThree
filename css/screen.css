@@ -27,7 +27,7 @@ html, body{
 header{
 	background-color:#222;
 }
-h1.home{
+.home{
 	font-family:Source Sans Pro, sans-serif;
 	color:#aaa;
 	font-size:3em;
@@ -35,30 +35,28 @@ h1.home{
 	margin-left:4em;
 	margin-top:0.5em;
 }
-
-
 /*	Navigation Bar -- Welcome, Class Registration, Academics, Finance, GMail, Blackboard*/
-	nav{
+nav{
 	background-color:#333;
 	margin: 0 auto;
 	overflow:hidden;
-	}
-	nav ul li{
-		display:inline-block;
-		list-style-type:none;
-	}
-	nav > ul > li > a{
-		color:#aaa;
-		display:block;
-		line-height:2em;
-		padding: 0.5em 0.5em;
-		text-decoration:none;
-		margin:right;
-	}
-	a:hover{	/*When navbar link is hovered, it will highlight a color*/
-		background-color:#cc0000;
-		font-weight: bold;
-	}
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+}
+nav > ul > li > a{
+	color:#aaa;
+	display:block;
+	line-height:2em;
+	padding: 0.5em 0.5em;
+	text-decoration:none;
+	margin:right;
+}
+a:hover{	/*When navbar link is hovered, it will highlight a color*/
+	background-color:#cc0000;
+	font-weight: bold;
+}
 
 /******* Boxes for options ****/
 
@@ -183,7 +181,32 @@ section.schedule table tbody tr.classdetails td select{
 	display:inline;
 }
 
-section.schedule .form3 {
+section.schedule.form3 {
 	margin-top:1em;
 	margin-left:23.5em;
+}
+
+/******** news css *******/
+#news{
+	height: 25%;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 2em;
+}
+
+#news ul li{
+	list-style:none;
+	display:inline;
+}
+
+/******** calendar css *******/
+#calendar{
+	height: 50%
+	width: 80%;
+}
+#cal {
+	border: 0;
+	width: 100%;
+	height: 100%;
+	frameborder: 0;
 }
