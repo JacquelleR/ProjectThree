@@ -57,6 +57,7 @@ h1.home{
 	}
 	a:hover{	/*When navbar link is hovered, it will highlight a color*/
 		background-color:#cc0000;
+		font-weight: bold;
 	}
 
 /******* Boxes for options ****/
