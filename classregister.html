@@ -7,42 +7,72 @@
 	<link rel="stylesheet" href="css/screen.css" />
 </head>
 <body>
-	<section class="header">
-		<header>
-			<h1 class="home">Registration</h1>
-		<picture>
-			<source srcset="img/myiit-logo.png">
-			<img src="img/myiit-logo.png" alt="myIIT logo">
-		</picture>
-		</header>
+	<ul class="navigation">	
+		<!-- Links to other pages. -->	
+		<li class="nav-item">
+			<a href="welcome.html">Home Page</a>
+		</li>
+		<li class="nav-item">
+			<a href="academics.html">Academics</a>
+		</li>
+		<li class="nav-item">
+			<a href="welcome.html">Finance</a>
+		</li>
+		<li class="nav-item">
+			<a href="welcome.html">Library and Research</a>
+		</li>
+		<!-- Link to GMail-->
+		<li class="nav-item">
+			<a href="https://my.iit.edu/jsp/misc/iit/gSp.jsp?SAMLRequest=fVLfT9swEH6fxP9g%2BT1JUzGGrCaogNAqsS2iYQ%2B8HfYlterYns9px3%2BPm4JgEuP18933y7e4%2BDsYtsNA2tmKl%2FmMM7TSKW37it%2B3N9k5v6hPviwIBuPFcowbe4d%2FRqTI0qYlMT1UfAxWOCBNwsKAJKIU6%2BWPWzHPZ8IHF510hrPVdcU71Wu13XqjpQflOgm%2B3xjvug6Ugi3Co7Negefs96ut%2BcHWimjElaUINiZoVp5ls9OsPGvnc1Gei6%2FfHjhrXpQutT0m%2BMzW43GIxPe2bbLm17qdCHZaYfiZpiveO9cbzKUbDvINEOldgjswhJwtiTDEZPDKWRoHDGsMOy3x%2Fu624psYPYmi2O%2F3%2BRtNAYXWMUc1FiCJ11OtYkoW3vX5uW941eX1R8yL4h1p%2FfJxhzyr68al0p%2FY0hi3vwoIMYWJYUxZblwYIP5ft8zLCdEq66ZRMVryKHWnUXFW1EfVfy8k3c0z&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fmail.google.com%252Fmail%252F%26osid%3D1%26service%3Dmail%26ss%3D1%26ltmpl%3Ddefault" target="_blank" >
+				<img id="GmailPic" alt="Gmail Icon." src="img/Gmail.png" width="25" height="25"/>
+			</a>
+		</li>
+		<!-- Link to Blackboard-->
+		<li class="nav-item">
+			<a href="https://blackboard.iit.edu/" target="_blank">
+				<img src="img/BlackBoardLearn.jpg" alt= "Blackboard Icon." width="25" height="25" />
+			</a>
+		</li>
+		<!-- Logout Icon -->	
+		<li class="nav-item">
+			<a href="index.html">
+				<img src="img/lock.png" alt="Log Out Icon" width="25" height="25" />
+			</a>
+		</li>
+	</ul>
+<!--Same on every page-->	
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<label for="nav-trigger"></label>
+
+
+
+<div class="site-wrap">
+		<div class="header">
+			<picture>
+				<source srcset="img/myiit-logo.png">
+				<img src="img/myiit-logo.png" alt="myIIT logo">
+			</picture>
+			<h1>Register</h1>
+		</div>
+
+
+
+	<div id="form">
+		<form  action="schedule.html">
+	  		<label for="username">Term:</label>
+	  		<select>
+	<option value="Summer16">Summer-2016</option>
+	<option value="Fall-16">Fall-2016</option>
+	</select><br>
+	  		<label for="password">Registration Pin:</label>
+	  		<input type="password" placeholder="Pin"required= "yes">
+	  		<br><button type="submit">Login</button>
+		</form>
+	</div>
 	</section>
-	<nav>
-		<ul>
-		<li><a href="welcome.html">Home Page</a></li>
-		<li><a href="registration.html">Academics</a></li>
-		<li><a href="finance.html">Finance</a></li>
-		<!-- Gmail / Blackboard Below -->
-		<li><a href="https://mail.google.com">Gmail</a></li>
-		<li><a href="https://blackboard.iit.edu">Blackboard</a></li>
-		<li><a href="index.html">Logout</a></li>
-	</nav>
-	<section class="registration">
-	<span>Select Term:</span>
-	<select>
-	<option value="summer">Summer 2016</option>
-	<option value="fall">Fall 2016</option>
-	</select>
-	<form class="form1">
-	Alternate PIN Verification: <input type="password" name="Alternate PIN">
+	
+	
 		
-	</form>
-	<form class="form2" action="schedule.html">
-	<button type="submit">Submit</button>	
-	</form>	
-	</section>
-	
-	
-		<script src="somethinghere.js"> </script>
 		
 </body>
 </html>

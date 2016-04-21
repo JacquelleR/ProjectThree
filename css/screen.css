@@ -1,79 +1,31 @@
 /*	HTML Reset	*/
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-ins{background-color:#ff9;color:#000;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-
-/*	-	-	-	-	-	-	-	-	-	-	*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block} nav ul{list-style:none}blockquote,q{quotes:none} blockquote:before,blockquote:after,q:before,q:after{content:none} a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent} ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
 html, body{
 	background-color:#D1D0CE;
 	font-family:Roboto, sans-serif;
+	width: 100%;
+	height: 100%;
+  overflow-x: hidden;
 }
-.header img{
- 	background-color:white;
-}
-header{
-	background-color:#222;
-}
-.home{
-	font-family:Source Sans Pro, sans-serif;
-	color:#aaa;
-	font-size:3em;
-	position: absolute;
-	margin-left:4em;
-	margin-top:0.5em;
-}
-/*	Navigation Bar -- Welcome, Class Registration, Academics, Finance, GMail, Blackboard*/
+
+/*Navigation Bar(http://www.sitepoint.com/pure-css-off-screen-navigation-menu/) -- Welcome, Class Registration, Academics, Finance, GMail, Blackboard*/
 .navigation {
   width: 100%;
   height: 100%;
   position: fixed;
-  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 0;
-  
+
   list-style: none;
   background: #111;
    -moz-box-shadow:		0px 0px 5px 0px #000000;
    -webkit-box-shadow: 0px 0px 5px 0px #000000;
     box-shadow:       0px 0px 5px 0px #000000;
-  
-}
-
-/*
-nav{
-	background-color:#333;
-	margin: 0 auto;
-	overflow:hidden;
-}
-nav ul li{
-	display:inline-block;
-	list-style-type:none;
-}
-nav > ul > li > a{
-	color:#aaa;
-	display:block;
-	line-height:2em;
-	padding: 0.5em 0.5em;
-	text-decoration:none;
-	margin:right;
-}
-*/
-
-a:hover{	/*When navbar link is hovered, it will highlight a color*/
-	background-color:#cc0000;
-	font-weight: bold;
 }
 .nav-item {
   width:12.5em;
@@ -83,7 +35,6 @@ a:hover{	/*When navbar link is hovered, it will highlight a color*/
    -webkit-box-shadow: 0px 3px 5px 0px #000000;
     box-shadow:       		  0px 3px 5px 0px #000000;
 }
-
 .nav-item a {
   display: block;
   padding: 1em;
@@ -93,155 +44,219 @@ a:hover{	/*When navbar link is hovered, it will highlight a color*/
   text-decoration: none;
   transition: color 0.2s, background 0.5s;
 }
-
 .nav-item a:hover {
   color: #c74438;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
 }
+.site-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #aaa;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
 
+}
 .nav-trigger {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.nav-trigger:checked + label {
+  left: 215px;
+  bottom: 0;
+}
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+  bottom: 0;
 }
 label[for="nav-trigger"] {
-    /* ... previous styles here... */
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-    background-size: contain;
+	position: fixed;
+  top: 3%;
+  left: 5%;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+  
+  background-color:#D1D0CE;
 }
-
-/******* Boxes for options ****/
 
 /* From Home Page */
-
-section.content1{	
+.header img {
+ 	background-color:#aaa;
+ 	float: left;
+ 	margin-right: 0.5em;
+  margin-left: 4.2em;
+ 	height: 100%;
+}
+.header {
+	background-color:#222;
+	height: 10%;
+	width: 100%;
+	font-family:Source Sans Pro, sans-serif;
+	color:#aaa;
+  overflow: hidden;
+}
+.header h1 {
+	font-size: 235%;
+	float: left;
+	margin-top:2%;
+  	text-align: center;
+}
+.content1 {	
 	border: 0.1em solid #a20000;
 	border-radius: 2em;
-	background-color:#222222;
-	padding: 1em;
-	margin: 0 auto;
-	margin-left:15em;
-	margin-top: 1em;
-	width:35%;
-	height:40em;
-	position:relative;
-	
+	background-color: #222222;
+	padding: 4%;
+	margin: 5% 0 0 5%;
+	width: 80%;
+	height: 50% auto;
 }
-section.content2{
-	border: 0.1em solid #a20000;
-	border-radius: 2em;
-	background-color:#222222;
-	padding: 1em;
-	margin: 0 auto;
-	margin-left:65em;
-	margin-top: -42em;
-	width:35%;
-	height:40em;
-	position:relative;
-	
+.content1 h1 {
+	font-size: 175%;
+	color: white;
+	padding-bottom: 0.5em;
+	line-height: 40%;
 }
-section.content1 > h1.title, section.content2 > h1.title{
-	font-size:2em;
-	color:white;
-	padding-bottom:0.5em;
+.preview {
+	font-size: 100%;
+	color: #aaaaaa;
+	padding-bottom: 0.5em;
+	font-size: 100%;
 }
-section.content1 > h2.headline{
-	font-size:1.2em;
-	color:#cccccc;
-	padding-bottom:0.45em;
-}
-section.content1 > p.preview{
-	font-size:1.1em;
-	line-height:1.1em;
-	color:#aaaaaa;
-	padding-bottom:2em;
+.headline {
+	font-size: 100%;
+	color: #cccccc;
+	padding-bottom: 0.45em;
 }
 
-section.registration-id{
-	margin-top: 2em;
-	margin-left:3em;
-	margin-right:5.5em;
-  	position: relative;
-  	width: auto;
-  	height:auto;
-  	font-size: 1em;
-  	line-height: 2em;
-  	color: #FF0000;
-  	border-radius: 10px;
-  	padding: 1em;
-  	border: 5px solid #C11B17 ;
+/**Calendar css**/
+#calendar {
+	height: 25%;
+	width: 90%;
+	margin: 3% 5% 0 5%;
+}
+#cal {
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*********For Academics**********/
+.registration-id{
+	width: 80%;
+	height: auto;
+	margin: 5% 10% 5% 10%;
+	font-size: 110%;
+	line-height: 2em;
+	color: #FF0000;
+
+	border-radius: 10px;
+	padding: 1em;
+	border: 5px solid #C11B17 ;
 	background-color: #FAFAFA;
 	box-sizing: border-box;
-	float:right;
-	
-
 }
-
-section.registration-id span{
-       font-size: 1.5em;
+.registration-id h2{
+  font-size: 130%;
+  font-weight: 800;
+  line-height: 2em;
 }
-
-section.registration-id ul{
+.registration-id ul{
 	list-style: none;
 }
-section.registration-tools{
-	margin: 2em;
-  	position: relative;
-  	width: auto;
-  	height:auto;
-  	font-size: 1em;
-  	line-height: 2em;
-  	color: #FF0000;
-  	border-radius: 10px;
-  	padding: 1em;
-  	border: 5px solid #C11B17 ;
+.registration-id a{ color: red; }
+.registration-tools{
+	width: 80%;
+  height: auto;
+  margin: 0 10% 0 10%; 
+  font-size: 110%;
+  line-height: 2em;
+  color: #FF0000;
+	float: left;
+
+  border-radius: 10px;
+  padding: 1em;
+  border: 5px solid #C11B17 ;
 	background-color: #FAFAFA;
 	box-sizing: border-box;
-	float:left;
-	
 }
-
-section.registration-tools span{
-	font-size:1.5em;
-
+.registration-tools h2{
+	font-size: 130%;
+  font-weight: 800;
+  line-height: 2em;
 }
-
-section.registration-tools ul{
+.registration-tools ul{
 	list-style:none;
 }
-
+.registration-tools a{
+	color: red;
+}
 
 /**** Registration page *****/
-section.registration{
+.registration{
 	margin:2em;
 	display:block;
 }
-section.registration select{
+.registration select{
 	margin-left:7.3em;
 	width:16em;
 	margin-bottom:2em;
 }
-section.registration .form2{
+.registration.form2{
 	margin-top:1em;
 	margin-left:23.5em;
 }
 
-/****** Schedule ******/
-section.schedule{
-	margin:2em;
+/****** Schedule Page******/
+.schedule{
+	width:auto;
+        min-height: 50%;
+	height: auto;
+        line-height: 1.5em;
+	margin: 5% 5% 0 5%; 
+	
+	color: #FF0000;
+	float: left;
+  /*Box Styling*/
+	border-radius: 10px;
+	padding: 1em;
+	border: 5px solid #C11B17 ;
+	background-color: #FAFAFA;
+	box-sizing: border-box;
+        overflow-x: scroll;
+}
+.schedule h3{
+  font-size:1em;
+  line-height: 2em;
+  width: auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.schedule th {
+	padding-right: 2em;
+	color: red;
+}
+.schedule td {
+  padding-right: 5%;
+  color: red;
 }
 
-section.schedule h3{
-	margin:1em;
-}
-
-section.schedule table tbody{
-	margin: 2em;
-  	position: relative;
+ /*Class register*/
+#form{
+	margin: 5% 20% 0 20%; 
   	width: auto;
-  	height:auto;
+  	max-width: 480px;
+  	height: auto;
+  	position: relative;
   	font-size: 1em;
   	line-height: 2em;
   	color: #FF0000;
@@ -249,65 +264,36 @@ section.schedule table tbody{
   	padding: 1em;
   	border: 5px solid #C11B17 ;
 	background-color: #FAFAFA;
-	box-sizing: border-box;
+	box-sizing: border-box; 	
+}
+#form button{
+	display: inline;
+	margin: 1em 0 1em 0;
+	clear: left;
+	height: auto;
 }
 
-
-section.schedule table{
-	margin:1em;
-}
-
-section.schedule table tbody tr{
-	display: block;
-	margin: 1em;
-}
-
-section.schedule table tbody tr th{
-	padding:2em;
-}
-
-section.schedule table tbody tr.classdetails{
-	display: block;
-	margin-top: -3.8em;
-}
-section.schedule table tbody tr.classdetails td{
-	padding:1.7em;
-	margin-top:1em;
-}
-section.schedule table tbody tr.classdetails td select{
-	display:inline;
-}
-
-section.schedule.form3 {
-	margin-top:1em;
-	margin-left:23.5em;
-}
-th{
-	color:white;
-}
-
-/******** news css *******/
-#news{
-	height: 40%;
-	border: 2px solid black;
-	padding: 2%;
-	margin: 2em;
-}
-
-#news ul li{
-	list-style:none;
-	display:inline;
-}
-
-/******** calendar css *******/
-#calendar{
-	height: 100%;
-	width: 80%;
-}
-#cal {
-	position: relative;
-	left:5%;
-	border: 0;
-	width: 90%;
-	height: 50%;
+	
+@media (min-device-width:430px) {
+  .header {
+  height: 8%;
+  }
+  label[for="nav-trigger"] {
+  top: 3%;
+  left: 4%;
+  }
+  .header img {
+  margin-right: 0.5em;
+  margin-left: 12%;
+  }
+.header {
+  height: 10%;
+  width: 100%;
+  }
+.header h1 {
+  font-size: 235%;
+  float: left;
+  margin-top: 2%;
+  text-align: center;
+  }
 }

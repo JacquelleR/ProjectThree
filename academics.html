@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Class Registration</title>
+	<title>Welcome!</title>
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
 	<link rel="stylesheet" href="css/screen.css" />
 </head>
 <body>
-	<section class="header">
-		<header>
-			<h1 class="home">Academics</h1>
-			<picture>
-				<source srcset="img/myiit-logo.png">
-				<img src="img/myiit-logo.png" alt="myIIT logo">
-			</picture>
-		</header>
-	</section>
-	<ul class="navigation">		
+<!-- Same on every page -->
+	<ul class="navigation">	
+		<!-- Links to other pages. -->	
 		<li class="nav-item">
 			<a href="welcome.html">Home Page</a>
 		</li>
@@ -29,56 +22,53 @@
 		<li class="nav-item">
 			<a href="welcome.html">Library and Research</a>
 		</li>
-	<!-- Gmail / Blackboard Below -->	
 		<!-- Link to GMail-->
 		<li class="nav-item">
 			<a href="https://my.iit.edu/jsp/misc/iit/gSp.jsp?SAMLRequest=fVLfT9swEH6fxP9g%2BT1JUzGGrCaogNAqsS2iYQ%2B8HfYlterYns9px3%2BPm4JgEuP18933y7e4%2BDsYtsNA2tmKl%2FmMM7TSKW37it%2B3N9k5v6hPviwIBuPFcowbe4d%2FRqTI0qYlMT1UfAxWOCBNwsKAJKIU6%2BWPWzHPZ8IHF510hrPVdcU71Wu13XqjpQflOgm%2B3xjvug6Ugi3Co7Negefs96ut%2BcHWimjElaUINiZoVp5ls9OsPGvnc1Gei6%2FfHjhrXpQutT0m%2BMzW43GIxPe2bbLm17qdCHZaYfiZpiveO9cbzKUbDvINEOldgjswhJwtiTDEZPDKWRoHDGsMOy3x%2Fu624psYPYmi2O%2F3%2BRtNAYXWMUc1FiCJ11OtYkoW3vX5uW941eX1R8yL4h1p%2FfJxhzyr68al0p%2FY0hi3vwoIMYWJYUxZblwYIP5ft8zLCdEq66ZRMVryKHWnUXFW1EfVfy8k3c0z&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fmail.google.com%252Fmail%252F%26osid%3D1%26service%3Dmail%26ss%3D1%26ltmpl%3Ddefault" target="_blank" >
-				<img id="GmailPic" src="img/Gmail.png" width="25" height="25"/>
+				<img id="GmailPic" alt="Gmail Icon." src="img/Gmail.png" width="25" height="25"/>
 			</a>
 		</li>
-
 		<!-- Link to Blackboard-->
 		<li class="nav-item">
 			<a href="https://blackboard.iit.edu/" target="_blank">
-				<img src="img/BlackBoardLearn.jpg" width="25" height="25" /></a>
+				<img src="img/BlackBoardLearn.jpg" alt= "Blackboard Icon." width="25" height="25" />
+			</a>
 		</li>
-
+		<!-- Logout Icon -->	
 		<li class="nav-item">
-			<a href="index.html">Logout</a>
+			<a href="index.html">
+				<img src="img/lock.png" alt="Log Out Icon" width="25" height="25" />
+			</a>
 		</li>
 	</ul>
-
+<!--Same on every page-->	
 	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-	
-	<section class="registration-id">
-		<span>Academic Profile</span>
-		<ul>
-			<li>Student Grade</li>
-			<li>Academic Advisor</li>
-			<li>Course Evaluation</li>
-			<li>Degree Work</li>
-		</ul>
-	</section>
-	<section class="registration-tools">
-		<span>Registration Tools</span>
-		<ul>
-			<li>Register for Class</li>
-			<li>Look Up classes</li>
-		</ul>
-			<!-- Contains a drop-down menu, shows the Registration PIN for the varying semesters -->
-	</section>
-	<section class="degree-works">
-		<ul>
-			<li><a href="https://degreeworks.iit.edu/dwdev/IRISLink.cgi?CAS=ENABLED&SERVICE=LOGON&SCRIPT=SD2WORKS&">Undergraduate Degree Works</a></li>
-			<li><a href="https://degreeworks-g.iit.edu/IRISLink.cgi?CAS=ENABLED&SERVICE=LOGON&SCRIPT=SD2WORKS&">Graduate Degree Works</a></li>
-		<ul>
-	</section>
-	<section class="registration-tools">
-		<ul>
-			<li><a href=" ">Search Classes</a></li>
-			<li><a href=" ">Add/Drop Classes</a></li> 
-			<!-- Add/Drop Classes should allow you to check status, time, & location.  -->
-		</ul>
-	</section>
+	<label for="nav-trigger"></label>
+<!-- Unique to page. -->
+	<div class="site-wrap">
+		<div class="header">
+			<picture>
+				<source srcset="img/myiit-logo.png">
+				<img src="img/myiit-logo.png" alt="myIIT logo">
+			</picture>
+			<h1>Academics</h1>
+		</div>
+		<section class="registration-id">
+			<h2>Academic Profile</h2>
+			<ul>
+				<li><a href="academic.html">Student Grades</li>
+				<li><a href="academic.html">Academic Advisor</li>
+				<li><a href="academic.html">Course Evaluations</li>
+				<li><a href="academic.html">DegreeWorks</li>
+			</ul>
+		</section>
+		<section class="registration-tools">
+			<h2>Registration Tools</h2>
+			<ul>
+				<li><a href="classregister.html">Register for Classes</li>
+				<li><a href="academic.html">Search classes</li>
+			</ul>
+		</section>
+	</div>
 </body>
 </html>

@@ -1,33 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+/*http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126; License: none (public domain)*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block} nav ul{list-style:none}blockquote,q{quotes:none} blockquote:before,blockquote:after,q:before,q:after{content:none} a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent} ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
 body {
 	line-height: 1;
 }
@@ -35,7 +7,7 @@ ol, ul {
 	list-style: none;
 }
 blockquote, q {
-	quotes: none;
+	quotes: none; 
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -46,144 +18,91 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-
-     /*.....................*/
+/*.....................*/
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
 html, body{
 	background-color:#D1D0CE;
 	font-family:Roboto, sans-serif;
+	height: 100%;
+	width: 100%;
 }
-
 .headwrapper {
 	background-color:black;
-	width:auto;
-
+	width: auto;
+	height: 15%;
 }
-
-.headwrapper .logo{
-	max-width:100%;
-	background-color:white;
-	height:auto;
+#logo {
+	width: auto;
+	background-color:#D1D0CE;
+	height: 100%;
+	float: left;.
 }
-.name { /* Header, my.iit.edu text,  */
+.name { 
+/* my.iit.edu */
 	text-align: center;
-	font-size: 5em;
+	font-size: 250%;
 	text-decoration: none;
-	word-spacing:-0.25em;
-	margin-top: -1em;
-	overflow:hidden;
-  }
-
-
-
-.headwrapper .name .first, 
-.headwrapper .name .third{
-	color:white;
-	text-decoration: none;
-	
-	
+	margin-top: 4%;
 }
-
-.headwrapper .name .second{
-	color:#990012 ;
-	text-decoration: none;
-
-
+#first{
+	margin-left: 3%;
 }
-
-.headwrapper #nav{
-	float:right;
-	margin-top: -2em;
-	font-size: 1.2em;
-	padding-right: 3em;
-	
+#first, #third{
+	color: #D1D0CE;
+	float: left;
 }
-.headwrapper #nav li{
-	position: relative;
-        color: Red;
-        display: inline-block;
-      
-
+#second{
+	float: left;
+	color:#990012;
 }
-#nav li a{
-	color: #f3f3f3;
-}
-
-#nav li:hover > a {
-	color: red;
-}
-
 body{
 	background-color:#D1D0CE;
 }
-.bodywrapper h2{
-	
+h2{
 	font-size: 4em;
 	color: #C11B17;
-	text-align:center;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+	margin-left: 20%
 }
-.form{
-	  margin: 0 auto;
+#form{
+	margin: 5% 20% 0 20%; 
+  	width: auto;
+  	max-width: 480px;
+  	height: 60%;
   	position: relative;
-  	width: 30%;
-  	height:auto;
   	font-size: 1em;
   	line-height: 2em;
   	color: #FF0000;
   	border-radius: 10px;
   	padding: 1em;
   	border: 5px solid #C11B17 ;
-	  background-color: #FAFAFA;
-	  box-sizing: border-box;
-  	
+	background-color: #FAFAFA;
+	box-sizing: border-box; 	
 }
-
 table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
-
 label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
     width: 8em;
-    text-align: start;
+    height: auto;
+    text-align: left;
 }
-
 .form button{
-	margin:1em;
-	margin-left: 11.5em;
+	display: inline;
+	margin: 1em 0 1em 0;
+	clear: left;
+	height: auto;
 }
-
-/* Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    .headwrapper { width:67%; }
-    #nav { width:30%; margin-left:3%;}  
-}
-
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    .headwrapper { width:100%; }
-    #nav { width:100%; margin:0; border:none; }
-}
-
 @media (min-device-width:600px) {
-    .logo[data-src-600px] {
-        content: attr(data-src-600px, url);
-    }
+    .name { 
+		text-align: center;
+		font-size: 320%;
+		text-decoration: none;
+		margin-top: 0.65em;
+	}
 }
-
-@media (min-device-width:800px) {
-    .logo[data-src-800px] {
-        content: attr(data-src-800px, url);
-    }
-}
-
-
